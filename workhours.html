@@ -1,0 +1,105 @@
+<html style="min-width:600px;min-height:600px">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="jquery.simplePagination.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />	
+	 <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.13.0.css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="simplePagination.css"/>
+
+
+</head>
+<body>
+	<form id="frmCadastre">
+		<table border="1" width="100%" >
+			<tr>
+				<td width="50%">
+					<ul>
+						<li>
+							<label for="txtID">Date:</label>
+							<input type="text" id="dateID" readonly="readonly"/>
+						</li>
+						<li>
+							<label for="fromTime">From:</label>
+							<input type="text" id="fromTime"/>
+						</li>
+						<li>
+							<label for="toTime">To:</label>
+							<input type="text" id="toTime"/>
+						</li>
+						<li>
+							<label for="toTime">Comments:</label>
+							<textarea maxlength="50" id="comments"></textarea>
+						</li>
+						<li>
+							<input type="submit" class="redButton" value="Save" id="btnSave"/>
+							<input type="button" class="redButton" value="Clear" id="btnClear"/>
+						</li>
+					</ul>
+				</td>
+				<td align="center">
+					<canvas id="digitalClock" height="80" width="220">
+	 				</canvas>
+	 				<table width="100%">
+	 					<tr align="center">
+	 						<td>
+	 							<label>IN Time</label>
+	 						</td>
+	 						<td>
+	 							<label>OUT Time</label>
+	 						</td>
+	 					</tr>
+	 					<tr align="center">
+	 						<td>
+	 							<div id="intimeDiv"></div>
+	 						</td>
+	 						<td>
+	 							<div id="outtimeDiv"></div>
+	 						</td>
+	 					</tr>
+	 				</table>
+					
+					
+					<input type="button" class="redButton" value="Start" id="btnStart"/>
+					<input type="button" class="redButton" value="Stop" id="btnStop"/>
+				</td>
+			</tr>
+		</table>
+	<table width="100%" border=1>
+		<tr>
+			<td  align="center">
+				<b>Target Hours:</b> <span id="targetHours"></span>
+			</td>
+			<td  align="center">
+				<b>Total Hours:</b> <span id="totalHours"></span>
+			</td>
+			<td  align="center">
+				<b>Avg Hours:</b> <span id="avgHours"></span>
+			</td>
+		</tr>
+	</table>
+	<div id="paginator"></div>
+	<table id="tblList">
+
+	</table>
+	
+	
+	<table>
+		<tr>
+			<td>
+				<input type="submit" id="newWeek" class="redButton" value="New Week" style="display:none"></input>
+				<a href="currentMonth.html"class="redButton" >View Weekly and Monthly Graph</a>
+			</td>
+		</tr>
+	
+	</table>
+	
+	</form>
+<label style="font-size:10px">Developed by Murali Chanda</label>
+
+</body>
+</html>

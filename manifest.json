@@ -1,0 +1,23 @@
+{
+   "browser_action": {
+      "default_icon": "edit.png",
+      "default_popup": "workhours.html"
+   },
+   "content_scripts": [ {
+      "js": [ "functions.js", "jquery-ui.js", "jquery-2.0.3.min.js", "jquery-ui-timepicker-addon.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "App to track your daily working hours.",
+   "icons": {
+      "128": "work_128_128.png",
+      "16": "work_48_48.png",
+      "48": "work_48_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyYh/+eHL2FQfwHxx+WpUBzyOpIglpLjwNTsc1yUG/4LvLBg3KlWdIsh/5yUvYXo7iacdSOVPRsQ50thxjoZ7e8hUAexAbYUJfb+56kXU2o3eTgHU9AZjAdzSmkv+KIN9Fa64Z1pf6usMgyEeceePwIvfnIr2nAHuq4MlExVAjZlMlwuDt0GA3IH1qY2Bb858gd84Lr8qYWAflZS4jXbgEjxgPIQf5ngG5dllxeREztSY9ds0N2L0PexxNNZYb+qVPf+Q2bsFT0EXjpuU6oOhy6GTgj2cBw+F35xyv+0sRIJFx257qQfW8Y8+mcttHOKOqRQeo3yT1zM8hxAVwvvOpQIDAQAB",
+   "manifest_version": 2,
+   "name": "Work Hours Tracker",
+   "offline_enabled": true,
+   "permissions": [ "http://code.jquery.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}

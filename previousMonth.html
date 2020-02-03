@@ -1,0 +1,64 @@
+<html style="min-width: 600px; min-height: 600px">
+<head>
+<link class="include" rel="stylesheet" type="text/css" href="jquery.jqplot.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script class="include" type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script class="include" type="text/javascript" src="jquery.jqplot.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="previousMonth.js"></script>
+<script type="text/javascript" src="jquery-ui-timepicker-addon.js"></script>
+<script class="include" language="javascript" type="text/javascript" src="jqplot.barRenderer.min.js"></script>
+<script class="include" language="javascript" type="text/javascript" src="jqplot.categoryAxisRenderer.min.js"></script>
+<script class="include" language="javascript" type="text/javascript" src="jqplot.pointLabels.min.js"></script>
+<script class="include" language="javascript" type="text/javascript" src="jqplot.canvasTextRenderer.min.js"></script>
+<script class="include" language="javascript" type="text/javascript" src="jqplot.canvasAxisTickRenderer.min.js"></script>
+<style>
+
+#tooltip1b {
+        font-size: 12px;
+        color: rgb(15%, 15%, 15%);
+        padding:2px;
+        background-color: rgba(255, 227, 144, 0.8);
+    }
+</style>
+</head>
+<body>
+	<a class="redButton" href="workhours.html">Back</a>
+	<a class="redButton" href="currentMonth.html">Current Month</a>
+	<table width="100%">
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td>
+							<label style="font-size: 14px">Total Hours : </label>
+						</td>
+						<td>
+							<label style="font-size: 14px;font-weight: bolder;" id="totalMonthHours"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label style="font-size: 14px">Total Days : </label>
+						</td>
+						<td>
+							<label style="font-size: 14px;font-weight: bolder;" id="totalMonthDays"></label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="right">
+							<label style="font-size: 8px">*Minutes ignored</label>
+							<div style="position:absolute;z-index:99;display:none;" id="tooltip1b"></div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2>
+				<div id="chart2" style="height: 300px; width: 100%;"></div>
+			</td>
+		</tr>
+		
+	</table>
+</html>
